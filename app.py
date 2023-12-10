@@ -9,14 +9,14 @@ def filter_table(df, keywords):
 # Function to read Excel file from SharePoint (replace with your SharePoint URL)
 def read_excel_from_sharepoint(file_url):
     # Use appropriate method to read the Excel file from SharePoint
-    # Example: df = pd.read_excel(file_url)
+    df = pd.read_excel("https://be4you-my.sharepoint.com/:x:/r/personal/nassima_kheldouni_bearingpoint_com/Documents/Livre%201.xlsx?d=w5adf639e97534151bbe7d6a4633baff7&csf=1&web=1&e=FQqkKx")
     # Replace the above line with your SharePoint file reading logic
     df = pd.DataFrame()  # Placeholder for demonstration
     return df
 
 # Main Streamlit app
 def main():
-    st.title("Search App")
+    st.title("Prompts")
 
     # Get user input for keywords
     keywords = st.text_input("Enter keywords (comma-separated):")
